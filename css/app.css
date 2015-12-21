@@ -1,0 +1,62 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+#navigation {
+  background-color: #292B25; }
+  #navigation .container {
+    color: #FFF; }
+    #navigation .container .nav {
+      padding: 1em 0em 1.5em; }
+      #navigation .container .nav nav {
+        margin-top: 2em; }
+        #navigation .container .nav nav li {
+          list-style-type: none;
+          display: inline-block;
+          border: 1px solid black;
+          background-color: #191919;
+          margin: 0em 1em;
+          padding: 0.5em 1em;
+          border-radius: 30px; }
+      #navigation .container .nav h1 {
+        display: inline-block;
+        margin: .2em .4em;
+        font-size: 4em; }
+
+#options {
+  margin: 1em 0em; }
+  #options .container {
+    background-color: #292B25; }
+    #options .container .row1 {
+      padding-left: 7em;
+      text-align: center; }
+      #options .container .row1 a {
+        color: #333333; }
+        #options .container .row1 a .option {
+          border: 1px solid black;
+          background-color: #FFF;
+          margin: 2em 2em;
+          padding-bottom: 1em; }
+          #options .container .row1 a .option i {
+            font-size: 3em;
+            padding: 1em 2.5em 0.5em; }
+          #options .container .row1 a .option h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 1em; }
+          #options .container .row1 a .option .btn {
+            border: 1px solid black;
+            border-radius: 10px;
+            font-size: 1.3em; }
+
+#footer .container {
+  text-align: center;
+  margin-bottom: 4em; }
+  #footer .container h2 {
+    margin-bottom: 1em; }
+  #footer .container p {
+    margin-bottom: 3em; }
+  #footer .container i {
+    font-size: 2em;
+    padding: 0em 2em; }
+
+/*# sourceMappingURL=app.css.map */

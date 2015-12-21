@@ -1,0 +1,30 @@
+#navigation {
+  background-color: #292B25;
+  .container {
+    color: #FFF;
+    .nav {
+      padding: 1em 0em 1.5em;
+
+      nav{
+        margin-top: 2em;
+        li {
+          list-style-type: none;
+          display: inline-block;
+          border: 1px solid black;
+          background-color: #191919;
+          margin: 0em 1em;
+          padding: 0.5em 1em;
+          border-radius: 30px;
+        }
+      }
+      
+      h1 {
+        display: inline-block;
+        margin: .2em .4em;
+        font-size: 4em;
+      }
+
+    }
+
+  }
+}
