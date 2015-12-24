@@ -1,62 +1,180 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
-#navigation {
-  background-color: #292B25; }
-  #navigation .container {
-    color: #FFF; }
-    #navigation .container .nav {
-      padding: 1em 0em 1.5em; }
-      #navigation .container .nav nav {
-        margin-top: 2em; }
-        #navigation .container .nav nav li {
-          list-style-type: none;
-          display: inline-block;
-          border: 1px solid black;
-          background-color: #191919;
-          margin: 0em 1em;
-          padding: 0.5em 1em;
-          border-radius: 30px; }
-      #navigation .container .nav h1 {
-        display: inline-block;
-        margin: .2em .4em;
-        font-size: 4em; }
+#landing .carousel {
+  position: relative; }
+  #landing .carousel img {
+    width: 100vw;
+    height: 100vh; }
+#landing .nav {
+  top: 1em;
+  color: #FFF;
+  background-color: rgba(8, 8, 8, 0.48);
+  position: absolute;
+  border-radius: 13px; }
+  #landing .nav nav {
+    display: inline-block;
+    padding: 2em 7em; }
+    #landing .nav nav li {
+      list-style-type: none;
+      display: inline-block;
+      border: 2px solid #AB3C05;
+      margin: 0em 1em;
+      padding: 0.5em 1em;
+      border-radius: 30px; }
+  #landing .nav img {
+    height: 6em;
+    width: 17em; }
+#landing .quote {
+  text-align: center;
+  position: absolute;
+  left: 29%;
+  top: 40%;
+  color: #FFF;
+  background-color: rgba(8, 8, 8, 0.48);
+  border-radius: 54px; }
+  #landing .quote .container {
+    font-family: 'Nunito', sans-serif;
+    margin-left: -22em;
+    margin-right: -22em;
+    text-shadow: 2px 2px #000 h1;
+      text-shadow-font-size: 36px;
+      text-shadow-line-height: 47px; }
 
-#options {
-  margin: 1em 0em; }
-  #options .container {
-    background-color: #292B25; }
-    #options .container .row1 {
-      padding-left: 7em;
-      text-align: center; }
-      #options .container .row1 a {
-        color: #333333; }
-        #options .container .row1 a .option {
-          border: 1px solid black;
+#menu {
+  background-color: #FFF;
+  color: #EA4F02; }
+  #menu .container {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: #EA4F02;
+    padding: 2em 0em; }
+    #menu .container h2 {
+      font-size: 48px;
+      color: #EA4F02; }
+    #menu .container .row1 {
+      padding-left: 7em; }
+      #menu .container .row1 a {
+        color: #EA4F02; }
+        #menu .container .row1 a .option {
+          border: 16px solid #EA4F02;
           background-color: #FFF;
           margin: 2em 2em;
-          padding-bottom: 1em; }
-          #options .container .row1 a .option i {
-            font-size: 3em;
-            padding: 1em 2.5em 0.5em; }
-          #options .container .row1 a .option h2 {
-            font-size: 30px;
+          padding-bottom: 1em;
+          border-radius: 38px; }
+          #menu .container .row1 a .option img.breakfast {
+            width: 10em;
+            margin: 2em 0em; }
+          #menu .container .row1 a .option img.lunch {
+            width: 9em;
+            margin: 1em 0em 2.25em; }
+          #menu .container .row1 a .option img.dinner {
+            width: 8em;
+            margin: 3em 0em 2em; }
+          #menu .container .row1 a .option h2 {
+            font-size: 48px;
+            color: #EA4F02;
             text-align: center;
             margin-bottom: 1em; }
-          #options .container .row1 a .option .btn {
-            border: 1px solid black;
+          #menu .container .row1 a .option .btn {
+            border: 3px solid #EA4F02;
             border-radius: 10px;
             font-size: 1.3em; }
+    #menu .container #breakfast .container h2 {
+      font-size: 48px;
+      color: #EA4F02; }
+    #menu .container #breakfast .container .tab-content .row {
+      margin: 3em 0em; }
+    #menu .container #lunch .container .tab-content .row {
+      margin: 3em 0em; }
+    #menu .container #dinner .container .tab-content .row {
+      margin: 3em 0em; }
+
+#reservation {
+  position: relative; }
+  #reservation img {
+    width: 100vw;
+    height: 100vh; }
+  #reservation a.text:hover {
+    text-decoration: none; }
+  #reservation a.text .image-text {
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.31);
+    margin-left: 4em;
+    border-radius: 2em;
+    text-align: center; }
+    #reservation a.text .image-text p {
+      font-size: 50px;
+      font-family: 'Kaushan Script', cursive;
+      color: #EA4F02;
+      text-shadow: 2px 2px #000; }
+    #reservation a.text .image-text span {
+      font-size: 2em;
+      letter-spacing: 14px; }
+    #reservation a.text .image-text .book {
+      border: 5px solid #EA4F02;
+      margin-bottom: 1em;
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+      background-color: transparent;
+      padding: 0em 1em; }
+
+#gallery .container .row {
+  margin-top: 3em; }
+#gallery .container .text {
+  text-align: center;
+  padding: 5em 0em;
+  font-family: 'Audiowide', cursive; }
+  #gallery .container .text h2 {
+    font-size: 3em;
+    color: #EA4F02; }
+  #gallery .container .text p {
+    font-size: 2em; }
+#gallery .container #carousel-custom {
+  margin: 20px auto;
+  width: 400px; }
+#gallery .container #carousel-custom .carousel-indicators {
+  margin: 10px 0 0;
+  overflow: auto;
+  position: static;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%; }
+#gallery .container #carousel-custom .carousel-indicators li {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  margin: 0 !important;
+  width: auto; }
+#gallery .container #carousel-custom .carousel-indicators li img {
+  display: block;
+  opacity: 0.5; }
+#gallery .container #carousel-custom .carousel-indicators li.active img {
+  opacity: 1; }
+#gallery .container #carousel-custom .carousel-indicators li:hover img {
+  opacity: 0.75; }
+#gallery .container #carousel-custom .carousel-outer {
+  position: relative; }
 
 #footer .container {
   text-align: center;
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  margin-top: 2em; }
   #footer .container h2 {
-    margin-bottom: 1em; }
+    font-size: 3.5em;
+    color: #EA4F02;
+    letter-spacing: 9px;
+    margin-bottom: 0.7em;
+    font-family: 'Chewy', cursive; }
   #footer .container p {
     margin-bottom: 3em; }
   #footer .container i {
     font-size: 2em;
+    color: #EA4F02;
     padding: 0em 2em; }
 
 /*# sourceMappingURL=app.css.map */

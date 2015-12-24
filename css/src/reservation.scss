@@ -1,0 +1,42 @@
+#reservation {
+position: relative;
+  img {
+
+    width: 100vw;
+    height: 100vh;
+  }
+  a.text {
+    &:hover {
+      text-decoration: none;
+    }
+  .image-text{
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.31);
+    margin-left: 4em;
+    border-radius: 2em;
+    text-align: center;
+      p {
+        font-size: 50px;
+        font-family: 'Kaushan Script', cursive;
+        color: #EA4F02;
+        text-shadow: 2px 2px #000;
+
+      }
+      span{
+        font-size: 2em;
+        letter-spacing: 14px;
+      }
+      .book {
+        border: 5px solid #EA4F02;
+        margin-bottom: 1em;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        background-color: transparent;
+        padding: 0em 1em;
+      }
+
+    }
+  }
+}

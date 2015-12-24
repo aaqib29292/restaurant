@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<!-- cd Projects/HTML/restaurant
+
+sass --watch css/src/app.scss:css/app.css -->
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,94 +13,672 @@
 
     <link rel="stylesheet" href="css/app.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Nunito:700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <script src="js/bootstrap.min.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 
   </head>
   <body>
-    <section id="navigation">
-      <div class="container">
-        <div class="nav">
-          <nav class="pull-left">
-            <li><a href="#"></a>About us</li>
-            <li><a href="#"></a>Menu</li>
-            <li><a href="#"></a>Reserve a seat</li>
-          </nav>
 
-          <h1>Food Astra</h1>
+    <section id="landing">
+          <div class="container-full">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
 
-          <nav class="pull-right">
-            <li><a href="#"></a>Today's Special</li>
-            <li><a href="#"></a>Photo Gallery</li>
-            <li><a href="#"></a>Contact Us</li>
-          </nav>
-        </div>
-      </div>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/landing/image1.jpg" alt="...">
+                  <div class="carousel-caption">
+
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/landing/image2.jpg" alt="...">
+                  <div class="carousel-caption">
+
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/landing/image3.jpg" alt="...">
+                  <div class="carousel-caption">
+
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/landing/image4.jpg" alt="...">
+                  <div class="carousel-caption">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+
+            <div class="container nav navbar-fixed-top">
+            <div class="nav navbar-fixed-top">
+              <nav class="pull-left">
+                <li><a href="#"></a>Menu</li>
+                <li><a href="#"></a>Reserve a seat</li>
+              </nav>
+
+              <img src="images/logo-final1.png" alt="">
+
+              <nav class="pull-right">
+                <li><a href="#"></a>Photo Gallery</li>
+                <li><a href="#"></a>About us</li>
+              </nav>
+            </div>
+          </div>
+          <div class="quote">
+            <div class="container">
+              <h1>To kill your hunger<br>&amp;<br>To fill your stomach</h1>
+            </div>
+          </div>
+
     </section>
 
-    <section id="slide">
-      <div id = "myCarousel" class = "carousel slide">
+   <section id="menu">
+     <div class="container">
+       <h2>Discover Our Menu</h2>
+       <div class="row row1" id="accordion">
+         <a href="#breakfast" data-toggle="collapse" data-parent="#accordion">
+           <div class="col-sm-3 option">
+             <img src="images/menu/breakfast.png" class="breakfast" alt="" >
+             <br>
+             <p class="btn btn-sm">See More</p>
+           </div>
+         </a>
 
-       <!-- Carousel indicators -->
-       <ol class = "carousel-indicators">
-          <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
-          <li data-target = "#myCarousel" data-slide-to = "1"></li>
-          <li data-target = "#myCarousel" data-slide-to = "2"></li>
-       </ol>
 
-       <!-- Carousel items -->
-       <div class = "carousel-inner">
-          <div class = "item active">
-             <img src = "images/landing/image1.jpg" alt = "First slide">
-          </div>
+         <a href="#lunch" data-toggle="collapse" data-parent="#accordion">
+           <div class="col-sm-3 option">
+             <img src="images/menu/lunch.png" class="lunch" alt="" >
+             <br>
+             <p class="btn btn-sm">See More</p>
+           </div>
+         </a>
 
-          <div class = "item">
-             <img src = "images/landing/image2.jpg" alt = "Second slide">
-          </div>
 
-          <div class = "item">
-             <img src = "images/landing/image3.jpg" alt = "Third slide">
-          </div>
+         <a href="#dinner" data-toggle="collapse" data-parent="#accordion">
+           <div class="col-sm-3 option">
+             <img src="images/menu/dinner.png" class="dinner" alt="" >
+             <br>
+             <p class="btn btn-sm">See More</p>
+           </div>
+         </a>
+
        </div>
 
-       <!-- Carousel nav -->
-       <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">&lsaquo;</a>
-       <a class = "carousel-control right" href = "#myCarousel" data-slide = "next">&rsaquo;</a>
+        <div id="breakfast" class="collapse">
 
-      </div>
-    </section>
+          <div class="container">
+            <h2>Breakfast</h2>
 
-    <section id="options">
-      <div class="container">
-        <div class="row row1">
-          <a href="#">
-            <div class="col-sm-3 option">
-              <i class="fa fa-file-text-o"></i>
-              <h2>Check Out Menu</h2>
-              <p class="btn btn-sm">See More</p>
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#recommended-breakfast">Recommended</a></li>
+              <li><a data-toggle="tab" href="#full-menu-breakfast">Full Menu</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="recommended-breakfast" class="tab-pane fade in active">
+
+                <div class="row">
+                  <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/menu/breakfast/1.png" alt="">
+                      <div class="caption">
+                        <h4>Idli (2 Pcs)</h4>
+                        <p>₹ 20</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/menu/breakfast/2.png" alt="">
+                      <div class="caption">
+                        <h4>Vada (2 Pcs)</h4>
+                        <p>₹ 30</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/menu/breakfast/3.png" alt="">
+                      <div class="caption">
+                        <h4>Pongal (1 Cup)</h4>
+                        <p>₹ 50</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="images/menu/breakfast/4.png" alt="">
+                      <div class="caption">
+                        <h4>Puri (3 Pcs)</h4>
+                        <p>₹ 40</p>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div id="full-menu-breakfast" class="tab-pane fade">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                      <div class="col-sm-7"><p>Idli (2 Pcs)</p></div>
+                      <div class="col-sm-3"><p>₹ 20</p></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                      <div class="col-sm-7"><p>Vada (2 Pcs)</p></div>
+                      <div class="col-sm-3"><p>₹ 30</p></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                      <div class="col-sm-7"><p>Pongal (1 Cup)</p></div>
+                      <div class="col-sm-3"><p>₹ 50</p></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                      <div class="col-sm-7"><p>Puri (3 Pcs)</p></div>
+                      <div class="col-sm-3"><p>₹ 40</p></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                      <div class="col-sm-7"><p>Uttapam</p></div>
+                      <div class="col-sm-3"><p>₹ 50</p></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                      <div class="col-sm-7"><p>Egg Uttapam</p></div>
+                      <div class="col-sm-3"><p>₹ 55</p></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
-          </a>
+          </div>
 
-          <a href="#">
-            <div class="col-sm-3 option">
-              <i class="fa fa-cutlery"></i>
-              <h2>Today's Special</h2>
-              <p class="btn btn-sm">See More</p>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="col-sm-3 option">
-              <i class="fa fa-calendar-plus-o"></i>
-              <h2>Reserve a Seat</h2>
-              <p class="btn btn-sm">See More</p>
-            </div>
-          </a>
         </div>
 
+       <div id="lunch" class="collapse">
+
+         <div class="container">
+           <h2>Lunch</h2>
+           <ul class="nav nav-tabs">
+             <li class="active"><a data-toggle="tab" href="#recommended-lunch">Recommended</a></li>
+             <li><a data-toggle="tab" href="#full-menu-lunch">Full Menu</a></li>
+           </ul>
+
+           <div class="tab-content">
+             <div id="recommended-lunch" class="tab-pane fade in active">
+               <div class="row">
+                 <div class="col-xs-6 col-md-3">
+                   <a href="#" class="thumbnail">
+                     <img src="images/menu/lunch/1.png" alt="">
+                     <div class="caption">
+                       <h4>Lunch Meal</h4>
+                       <p>₹ 80</p>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+
+             </div>
+             <div id="full-menu-lunch" class="tab-pane fade">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Biryani</p></div>
+                     <div class="col-sm-3"><p>₹ 100</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Chicken Biryani</p></div>
+                     <div class="col-sm-3"><p>₹ 150</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Chicken Chettinadu</p></div>
+                     <div class="col-sm-3"><p>₹ 100</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Fish Fry</p></div>
+                     <div class="col-sm-3"><p>₹ 60</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Fish Curry</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+
+                 </div>
+
+               </div>
+             </div>
+           </div>
+         </div>
+
+       </div>
+
+       <div id="dinner" class="collapse">
+
+         <div class="container">
+           <h2>Dinner</h2>
+           <ul class="nav nav-tabs">
+             <li class="active"><a data-toggle="tab" href="#recommended-dinner">Recommended</a></li>
+             <li><a data-toggle="tab" href="#full-menu-dinner">Full Menu</a></li>
+           </ul>
+
+           <div class="tab-content">
+             <div id="recommended-dinner" class="tab-pane fade in active">
+               <div class="row">
+                 <div class="col-xs-6 col-md-3">
+                   <a href="#" class="thumbnail">
+                     <img src="images/menu/dinner/1.png" alt="">
+                     <div class="caption">
+                       <h4>Masala Dosa</h4>
+                       <p>₹ 45</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-xs-6 col-md-3">
+                   <a href="#" class="thumbnail">
+                     <img src="images/menu/dinner/3.png" alt="">
+                     <div class="caption">
+                       <h4>Chapati (2 Pcs)</h4>
+                       <p>₹ 50</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-xs-6 col-md-3">
+                   <a href="#" class="thumbnail">
+                     <img src="images/menu/dinner/4.png" alt="">
+                     <div class="caption">
+                       <h4>Parotta (2 Pcs)</h4>
+                       <p>₹ 50</p>
+                     </div>
+                   </a>
+                 </div>
+
+                 <div class="col-xs-6 col-md-3">
+                   <a href="#" class="thumbnail">
+                     <img src="images/menu/dinner/5.png" alt="">
+                     <div class="caption">
+                       <h4>Egg Kothu Parotta</h4>
+                       <p>₹ 100</p>
+                     </div>
+                   </a>
+                 </div>
+
+               </div>
+
+             </div>
+             <div id="full-menu-dinner" class="tab-pane fade">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Plain Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 35</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Kal Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 35</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Masala Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 45</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Onion Podi Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Onion Uttapam</p></div>
+                     <div class="col-sm-3"><p>₹ 55</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Podi Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 45</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Plain Uttapam</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Onion Podi Uttapam</p></div>
+                     <div class="col-sm-3"><p>₹ 60</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Carrot Onion Uttapam</p></div>
+                     <div class="col-sm-3"><p>₹ 60</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Ghee Dosa (30 mm)</p></div>
+                     <div class="col-sm-3"><p>₹ 100</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Ghee podi Dosa (30 mm)</p></div>
+                     <div class="col-sm-3"><p>₹ 100</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Fried Idli</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Chapati (2 Pcs)</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Parotta (2 Pcs)</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Veg Kothu Parotta</p></div>
+                     <div class="col-sm-3"><p>₹ 100</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Onion Rava Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 45</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Rava Masala Special Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 45</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Wheat Dosa (2 Pcs)</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                 </div>
+
+
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Podi Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Onion Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Masala Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Podi Uttapam</p></div>
+                     <div class="col-sm-3"><p>₹ 60</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Onion Uttapam</p></div>
+                     <div class="col-sm-3"><p>₹ 60</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Dosa</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Chicken Fry</p></div>
+                     <div class="col-sm-3"><p>₹ 100</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Kothu Parotta</p></div>
+                     <div class="col-sm-3"><p>₹ 100</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Veesu Parotta</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Omelette</p></div>
+                     <div class="col-sm-3"><p>₹ 20</p></div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="col-sm-2"><img src="images/menu/non-veg-icon.jpg" alt=""></div>
+                     <div class="col-sm-7"><p>Egg Podimas</p></div>
+                     <div class="col-sm-3"><p>₹ 50</p></div>
+                   </div>
+                   <div class="col-sm-4">
+
+                   </div>
+                 </div>
+
+
+               </div>
+             </div>
+
+           </div>
+         </div>
+
+       </div>
+
+     </div>
+   </section>
+
+    <section id="reservation">
+        <img src="images/reservation/booking.jpg" class="img-responsive" alt="booking">
+        <a href="" class="text" data-toggle="modal" data-target="#myModal">
+          <div class="container image-text">
+            <p>your table awaits you<br><span>Reservation</span></p>
+            <button class="btn btn-lg book">Book Now</button>
+          </div>
+        </a>
+          <!-- Modal -->
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Reservation</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-offset-1 col-sm-2 control-label">Name</label>
+                      <div class="col-sm-8">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-offset-1 col-sm-2 control-label">Email</label>
+                      <div class="col-sm-8">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-offset-1 col-sm-2 control-label">No. of Persons</label>
+                      <div class="col-sm-8">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="No. of Persons">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-offset-1 col-sm-2 control-label">Date</label>
+                      <div class="col-sm-8">
+                        <input type="date" name="date" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-offset-1 col-sm-2 control-label">Date</label>
+                      <div class="col-sm-8">
+                        <input type="time" name="time" >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Book</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 text">
+
+              <h2>Explore our gallery</h2>
+              <p>Best place to hav tasty &amp; healthy food</p>
+          </div>
+          <div class="col-sm-7">
+            <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+                <div class='carousel-outer'>
+                    <!-- Wrapper for slides -->
+                    <div class='carousel-inner'>
+                        <div class='item active'>
+                            <img src='http://placehold.it/400x200&text=slide1' alt='' />
+                        </div>
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide2' alt='' />
+                        </div>
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide3' alt='' />
+                        </div>
+
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide4' alt='' />
+                        </div>
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide5' alt='' />
+                        </div>
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide6' alt='' />
+                        </div>
+
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide7' alt='' />
+                        </div>
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide8' alt='' />
+                        </div>
+                        <div class='item'>
+                            <img src='http://placehold.it/400x200&text=slide9' alt='' />
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+                        <span class='glyphicon glyphicon-chevron-left'></span>
+                    </a>
+                    <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+                        <span class='glyphicon glyphicon-chevron-right'></span>
+                    </a>
+                </div>
+
+                <!-- Indicators -->
+                <ol class='carousel-indicators mCustomScrollbar'>
+                    <li data-target='#carousel-custom' data-slide-to='0' class='active'><img src='http://placehold.it/100x50&text=slide1' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='1'><img src='http://placehold.it/100x50&text=slide2' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='2'><img src='http://placehold.it/100x50&text=slide3' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='3'><img src='http://placehold.it/100x50&text=slide4' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='4'><img src='http://placehold.it/100x50&text=slide5' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='5'><img src='http://placehold.it/100x50&text=slide6' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='6'><img src='http://placehold.it/100x50&text=slide7' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='7'><img src='http://placehold.it/100x50&text=slide8' alt='' /></li>
+                    <li data-target='#carousel-custom' data-slide-to='8'><img src='http://placehold.it/100x50&text=slide9' alt='' /></li>
+                </ol>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -114,7 +697,6 @@
         </div>
       </div>
     </section>
-
 
 
 

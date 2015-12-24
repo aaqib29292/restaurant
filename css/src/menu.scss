@@ -1,0 +1,91 @@
+#menu {
+background-color: #FFF;
+color: #EA4F02;
+
+  .container {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: #EA4F02;
+    padding: 2em 0em;
+    h2 {
+      font-size: 48px;
+      color: #EA4F02;
+    }
+
+  .row1 {
+    padding-left: 7em;
+
+    a {
+      color:#EA4F02;;
+
+      .option {
+        border: 16px solid #EA4F02;
+        background-color: #FFF;
+        margin: 2em 2em;
+        padding-bottom: 1em;
+        border-radius: 38px;
+
+        img.breakfast {
+          width: 10em;
+          margin: 2em 0em;
+        }
+        img.lunch {
+          width: 9em;
+          margin: 1em 0em 2.25em;
+        }
+        img.dinner {
+          width: 8em;
+          margin: 3em 0em 2em;
+        }
+        h2 {
+          font-size: 48px;
+          color: #EA4F02;
+          text-align: center;
+          margin-bottom: 1em;
+        }
+        .btn {
+          border: 3px solid #EA4F02;
+          border-radius: 10px;
+          font-size: 1.3em;
+        }
+      }
+
+    }
+  }
+
+  #breakfast {
+    .container {
+      h2 {
+        font-size: 48px;
+        color: #EA4F02;
+      }
+      .tab-content {
+        .row {
+          margin: 3em 0em;
+        }
+      }
+    }
+
+  }
+  #lunch {
+    .container {
+      .tab-content {
+        .row {
+          margin: 3em 0em;
+        }
+      }
+    }
+
+  }
+  #dinner {
+    .container {
+      .tab-content {
+        .row {
+          margin: 3em 0em;
+        }
+      }
+    }
+
+  }
+  }
+}
