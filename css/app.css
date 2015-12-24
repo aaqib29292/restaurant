@@ -39,7 +39,8 @@ body {
     margin-right: -22em;
     text-shadow: 2px 2px #000 h1;
       text-shadow-font-size: 36px;
-      text-shadow-line-height: 47px; }
+      text-shadow-line-height: 47px;
+      text-shadow-letter-spacing: 4px; }
 
 #menu {
   background-color: #FFF;
