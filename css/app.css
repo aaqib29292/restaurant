@@ -22,6 +22,9 @@ body {
       margin: 0em 1em;
       padding: 0.5em 1em;
       border-radius: 30px; }
+      #landing .nav nav li a {
+        color: white;
+        text-decoration: none; }
   #landing .nav img {
     height: 6em;
     width: 17em; }
